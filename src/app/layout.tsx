@@ -1,4 +1,4 @@
-import '@/styles/tailwind.css'
+import '@/styles/globals.css'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -94,7 +94,7 @@ export const metadata: Metadata = {
     title: '昆仑巢',
     statusBarStyle: 'black-translucent',
   }
-};
+}
 
 export default function RootLayout({
   children,
