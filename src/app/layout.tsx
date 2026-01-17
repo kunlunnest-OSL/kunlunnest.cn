@@ -1,5 +1,8 @@
-import '@/styles/globals.css'
 import type { Metadata } from 'next'
+
+import '@/styles/globals.css'
+import Navbar from '@/components/layout/Navbar'
+import Footer from '@/components/layout/Footer'
 
 export const metadata: Metadata = {
   /* basic */
@@ -8,17 +11,6 @@ export const metadata: Metadata = {
     default: '昆仑巢',
   },
   description: '昆仑巢官方网站。打造一个创新思想汇聚之地，在开放的世界解决开放的问题。',
-
-  /* icons */
-  icons: {
-    icon: [
-      { url: '/icon.svg', type: 'image/svg+xml' },
-      { url: '/favicon.ico', sizes: 'any' },
-    ],
-    apple: [
-      { url: '/apple-icon.png', sizes: '512x512', type: 'image/png' },
-    ],
-  },
 
   /* other */
   generator: 'Next.js',
@@ -55,7 +47,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/og.png',
+        url: '/meta/og.png',
         width: 1200,
         height: 630,
         alt: '黑色背景上有红色的昆仑巢字迹和白色的昆仑巢英文名字 - “Kun Lun Nest”'
@@ -84,7 +76,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '昆仑巢',
     description: '昆仑巢官方网站。打造一个创新思想汇聚之地，在开放的世界解决开放的问题。',
-    images: ['/og.png'],
+    images: ['/meta/og.png'],
     creator: '@dabaz_official',
   },
 
@@ -103,7 +95,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang='zh-CN'>
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }
