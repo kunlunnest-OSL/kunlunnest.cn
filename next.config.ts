@@ -18,10 +18,6 @@ const nextConfig: NextConfig = {
 
   turbopack: {},
 
-  experimental: {
-    taint: true,
-  },
-
   reactStrictMode: true,
 
   poweredByHeader: false,
