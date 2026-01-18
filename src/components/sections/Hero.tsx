@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button'
 
 export function HeroSection() {
   return (
-    <section id='hero' className='relative isolate px-6 -pt-14 lg:px-8 py-24 lg:py-32'>
+    <section id='hero' className='relative isolate px-6 lg:px-8'>
       <div
         aria-hidden='true'
         className='absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80'
