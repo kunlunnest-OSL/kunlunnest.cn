@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
         <div className='mt-6 border-t border-neutral-900/10 pt-6 md:flex md:items-center md:justify-between'>
           <p className='text-xs leading-5 text-neutral-500 md:order-1 mt-0'>
-            &copy; {new Date().getFullYear()} 昆仑巢科技创新有限公司 保留所有权利。
+            &copy; {new Date().getFullYear()} 昆仑巢（北京智能之路科技有限公司）保留所有权利。
           </p>
           <Link href='http://beian.miit.gov.cn' className='text-xs leading-5 text-neutral-500 md:order-2 md:mt-0 hover:underline' target='_blank'>
             京ICP备2026XXXXXX号
