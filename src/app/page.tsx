@@ -7,9 +7,9 @@ export default function HomePage() {
   return (
     <main className='min-h-screen'>
       <HeroSection />
+      <FoundersSection />
       <PhilosophySection />
       <LabsSection />
-      <FoundersSection />
     </main>
   )
 }
