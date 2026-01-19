@@ -21,7 +21,7 @@ const Footer = () => {
                   <li key={item.title}>
                     <Link 
                       href={item.href ?? '#'} 
-                      className='text-xs text-neutral-600 hover:text-neutral-900 transition-colors'
+                      className='text-xs text-neutral-600 hover:underline'
                     >
                       {item.title}
                     </Link>
