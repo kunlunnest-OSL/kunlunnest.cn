@@ -10,10 +10,13 @@ import { cn } from '@/lib/utils'
 import { navConfig } from '@/config/navigation'
 import { Button } from '@/components/ui/button'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuLabel, DropdownMenuPortal, DropdownMenuSeparator, DropdownMenuSub, DropdownMenuSubContent, DropdownMenuSubTrigger, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
+import { NavigationMenu, NavigationMenuItem, NavigationMenuList, NavigationMenuTrigger, NavigationMenuContent, NavigationMenuLink } from '@/components/ui/navigation-menu'
+import { useIsMobile } from '@/hooks/use-mobile'
 
 const Navbar = () => {
   const [ isOpen, setIsOpen ] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [ isScrolled, setIsScrolled ] = useState(false);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -110,42 +113,38 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className='hidden lg:flex lg:gap-x-8'>
-          {navConfig.map((group) => (
-            <DropdownMenu key={group.title}>
-              <DropdownMenuTrigger className='text-sm font-semibold text-neutral-900 flex items-center cursor-pointer outline-none'>
-                {group.title}
-              </DropdownMenuTrigger>
-              
-              <DropdownMenuContent className='w-56' align='center'>
-                {group.children?.map((item) => (
-                  <React.Fragment key={item.title}>
-                    {item.children ? (
-                      <DropdownMenuSub>
-                        <DropdownMenuSubTrigger>{item.title}</DropdownMenuSubTrigger>
-                        <DropdownMenuPortal>
-                          <DropdownMenuSubContent>
-                            {item.children.map((child) => (
-                              <DropdownMenuItem key={child.title} asChild className='cursor-pointer'>
-                                <Link href={child.href ?? '#'}>{child.title}</Link>
-                              </DropdownMenuItem>
-                            ))}
-                          </DropdownMenuSubContent>
-                        </DropdownMenuPortal>
-                      </DropdownMenuSub>
-                    ) : (
-                      <DropdownMenuItem key={item.title} asChild className='cursor-pointer'>
-                        <Link href={item.href ?? '#'}>{item.title}</Link>
-                      </DropdownMenuItem>
-                    )}
-                  </React.Fragment>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
-          ))}
-        </div>
         <div className='hidden lg:flex lg:flex-1 lg:justify-end'>
-          <Button>
+          <NavigationMenu className='hidden lg:flex' viewport={isMobile}>
+            <NavigationMenuList className='flex-wrap'>
+              {navConfig.map((group) => (
+                <NavigationMenuItem key={group.title}>
+                  <NavigationMenuTrigger className='text-sm font-semibold text-neutral-900 flex items-center cursor-pointer outline-none'>
+                    {group.title}
+                  </NavigationMenuTrigger>
+                  
+                  <NavigationMenuContent className='w-auto'>
+                    <ul className='grid w-auto gap-1'>
+                      {group.children?.map((item) => (
+                        <li key={item.title}>
+                          <NavigationMenuLink asChild>
+                            <Link 
+                              href={item.href ?? '#'} 
+                              className='block select-none space-y-1 rounded-md leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground'
+                            >
+                              <div className='text-sm font-medium leading-none'>
+                                {item.title}
+                              </div>
+                            </Link>
+                          </NavigationMenuLink>
+                        </li>
+                      ))}
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              ))}
+            </NavigationMenuList>
+          </NavigationMenu>
+          <Button className='ml-5'>
             预约访问
           </Button>
         </div>

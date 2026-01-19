@@ -4,13 +4,7 @@ export const navConfig = [
     children: [
       { title: '活动日历', href: '/calendar' },
       { title: '活动回顾', href: '/events' },
-      { 
-        title: '关于我们',
-        children: [
-          { title: '昆仑巢简介', href: '/about/intro' },
-          { title: '发起人介绍', href: '/about/founders' },
-        ]
-      },
+      { title: '关于我们', href: '/about' },
     ],
   },
   {
@@ -56,8 +50,7 @@ export const footerNavConfig = [
     children: [
       { title: '活动日历', href: '/calendar' },
       { title: '活动回顾', href: '/events' },
-      { title: '昆仑巢简介', href: '/about/intro' },
-      { title: '发起人介绍', href: '/about/founders' },
+      { title: '关于我们', href: '/about' },
     ],
   },
   {
