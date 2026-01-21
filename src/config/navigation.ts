@@ -8,7 +8,7 @@ export const navConfig = [
     ],
   },
   {
-    title: '巢脉',
+    title: '昆仑巢脉',
     children: [
       { 
         title: '人脉池', 
