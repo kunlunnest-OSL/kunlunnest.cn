@@ -32,7 +32,7 @@ const labs = [
 export function LabsSection() {
   return (
     <section id='labs' className='py-15'>
-      <div className='max-w-7xl mx-auto px-6 lg:px-8'>
+      <div className='max-w-7xl mx-auto px-6 lg:px-8 pt-8 md:pt-16'>
         <div className='flex flex-col md:flex-row md:items-end md:justify-between'>
           <div className='text-center md:text-left'>
             <Text variant='accent' weight='semibold'>

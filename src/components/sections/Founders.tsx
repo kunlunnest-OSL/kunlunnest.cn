@@ -47,7 +47,7 @@ const supporters = [
 export function FoundersSection() {
   return (
     <section id='founders' className='py-15'>
-      <div className='max-w-7xl mx-auto px-6 lg:px-8'>
+      <div className='max-w-7xl mx-auto px-6 lg:px-8 pt-8 md:pt-16 pb-12 md:pb-24'>
         <div className='text-center max-w-3xl mx-auto'>
           <Text variant='accent' weight='semibold'>
             创始人
@@ -87,7 +87,7 @@ export function FoundersSection() {
           <Text size='body' variant='accent' weight='semibold' className='mt-12'>
             共同发起人
           </Text>
-          <div className='flex flex-wrap justify-center gap-x-8 gap-y-4 mt-4'>
+          <div className='flex flex-wrap justify-center gap-x-4 mt-2'>
             {supporters.map((supporter) => (
               <span
                 key={supporter}
