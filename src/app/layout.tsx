@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/meta/og.png',
+        url: '/opengraph-image.jpg',
         width: 1200,
         height: 630,
         alt: '黑色背景上有红色的昆仑巢字迹和白色的昆仑巢英文名字 - “Kun Lun Nest”'
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '昆仑巢',
     description: '昆仑巢官方网站。打造一个创新思想汇聚之地，在开放的世界解决开放的问题。',
-    images: ['/meta/og.png'],
+    images: ['/opengraph-image.jpg'],
     creator: '@dabaz_official',
   },
 
