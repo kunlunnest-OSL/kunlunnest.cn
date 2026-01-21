@@ -6,10 +6,10 @@ export function HeroSection() {
     <section id='hero' className='relative isolate'>
       <div className='w-full'>
         <Image
-          src='/images/hero/hero.webp'
+          src='/images/hero/hero.avif'
           alt='昆仑巢'
-          width={1080}
-          height={720}
+          width={2160}
+          height={1440}
           className='w-full h-auto object-cover ring-neutral-900/10 aspect-video'
           priority
         />
