@@ -33,8 +33,8 @@ export function LabsSection() {
   return (
     <section id='labs' className='py-15'>
       <div className='max-w-7xl mx-auto px-6 lg:px-8'>
-        <div className='flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16'>
-          <div>
+        <div className='flex flex-col md:flex-row md:items-end md:justify-between'>
+          <div className='text-center md:text-left'>
             <Text variant='accent' weight='semibold'>
               开放实验室集群
             </Text>
@@ -42,10 +42,7 @@ export function LabsSection() {
               在开放的世界<br/>解决开放的问题
             </Text>
           </div>
-          <Text variant='muted' weight='semibold' className='hidden md:flex'>
-            昆仑巢在内部依托不同专业方向的巢友，<br/>以在开放的世界解决开放的问题为理念，<br/>整合各方优质资源，建立开放实验室集群。<br/>在合力研究各自方向的同时，也交叉合作。
-          </Text>
-          <Text variant='muted' weight='semibold' className='flex md:hidden'>
+          <Text variant='muted' weight='semibold' className='md:max-w-xs mt-6 md:mt-0'>
             昆仑巢在内部依托不同专业方向的巢友，以在开放的世界解决开放的问题为理念，整合各方优质资源，建立开放实验室集群。在合力研究各自方向的同时，也交叉合作。
           </Text>
         </div>

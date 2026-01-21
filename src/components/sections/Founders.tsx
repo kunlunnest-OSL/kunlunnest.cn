@@ -57,7 +57,7 @@ export function FoundersSection() {
           </Text>
         </div>
 
-        <div className='grid md:grid-cols-2 gap-8 mt-12'>
+        <div className='grid md:grid-cols-2 gap-12 mt-12'>
           {founders.map((founder) => (
             <div
               key={founder.name}
