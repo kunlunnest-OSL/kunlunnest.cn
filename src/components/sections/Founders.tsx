@@ -1,29 +1,23 @@
 import Image from 'next/image'
 
+import { Text } from '@/components/ui/text'
+
 const founders = [
   {
     name: '苏菂',
     role: '联合创始人',
-    imgSrc: '/images/founders/sudi.webp',
+    imgSrc: '/images/founders/sudi.avif',
     imgAlt: '苏菂',
-    achievements: [
-      '2011 年创办车库咖啡，成为移动互联网时代的创业地标',
-      '2015 年联合创立 YOU+ 国际青年社区',
-      '2018 年发起中关村创业博物馆',
-      '中国创业服务领域的标志性人物',
-    ],
+    titles: '车库咖啡创始人 中国创业生态的先行者',
+    achievements: '他在中关村开启了全球首家创业主题咖啡馆“车库咖啡”，将零散的创业资源集成化，定义了中国早期硬核创业的社区模式。他是连接资本与初创项目的核心枢纽，深刻推动了国内孵化器行业的演进。',
   },
   {
     name: '鲍岳桥',
     role: '联合创始人',
-    imgSrc: '/images/founders/baoyueqiao.webp',
+    imgSrc: '/images/founders/baoyueqiao.avif',
     imgAlt: '鲍岳桥',
-    achievements: [
-      '研发汉字系统 UCDOS，1995 年市场份额达 90% 以上',
-      '1998 年创办联众游戏，2000 年成为中国最大休闲游戏网站',
-      '2007 年转型为天使投资人',
-      '创立乐教乐学，高峰期覆盖 7000 万用户',
-    ],
+    titles: '中国第一代传奇程序员 UCDOS 与联众游戏创始人',
+    achievements: '九十年代他凭借 UCDOS 解决了中文计算难题，后创办联众游戏，开创了中国大规模在线娱乐社区的先河。作为技术驱动商业的先驱，他在底层软件开发与平台架构领域拥有奠基级成就。',
   },
 ];
 
@@ -55,61 +49,53 @@ export function FoundersSection() {
     <section id='founders' className='py-24 lg:py-32'>
       <div className='max-w-7xl mx-auto px-6 lg:px-8'>
         <div className='text-center max-w-3xl mx-auto mb-16'>
-          <p className='text-base/7 text-neutral-500'>
-            创立人及共同发起人
-          </p>
-          <h2 className='mt-2 text-4xl font-semibold tracking-tight text-pretty text-neutral-900 sm:text-5xl lg:text-balance'>
+          <Text variant='accent' weight='semibold'>
+            创始人
+          </Text>
+          <Text size='headline' weight='semibold' className='mt-2'>
             行业领袖共筑昆仑巢
-          </h2>
+          </Text>
         </div>
 
         <div className='grid md:grid-cols-2 gap-8 mb-16'>
           {founders.map((founder) => (
             <div
               key={founder.name}
-              className='bg-card border border-border rounded-lg p-8'
+              className='flex flex-col'
             >
-              <div className='flex items-center gap-4 mb-6'>
-                <div className='w-16 h-16 rounded-full bg-secondary flex items-center justify-center'>
-                  <Image
-                    src={founder.imgSrc}
-                    alt={founder.imgAlt}
-                    width={40}
-                    height={40}
-                    className='h-full w-full rounded-full'
-                  />
-                </div>
-                <div>
-                  <h3 className='text-2xl font-bold text-neutral-900'>
-                    {founder.name}
-                  </h3>
-                  <p className='text-brand-red'>{founder.role}</p>
-                </div>
-              </div>
+              <Image
+                src={founder.imgSrc}
+                alt={founder.imgAlt}
+                width={1280}
+                height={720}
+                className='object cover rounded-2xl aspect-video'
+              />
+              <Text weight='semibold' variant='accent' className='mt-8'>
+                {founder.name}
+              </Text>
+              <Text weight='semibold'>
+                {founder.titles}
+              </Text>
+              <Text variant='muted' weight='semibold'>
+                {founder.achievements}
+              </Text>
 
-              <ul className='space-y-3'>
-                {founder.achievements.map((achievement, index) => (
-                  <li key={index} className='flex items-start gap-3'>
-                    <span className='w-1.5 h-1.5 rounded-full bg-brand-red mt-2 shrink-0' />
-                    <span className='text-neutral-600 text-sm leading-relaxed'>
-                      {achievement}
-                    </span>
-                  </li>
-                ))}
-              </ul>
             </div>
           ))}
         </div>
 
         <div className='text-center'>
-          <p className='text-neutral-500 mb-8'>共同发起人</p>
+          <Text size='body' variant='accent' weight='semibold' className='mb-8'>
+            共同发起人
+          </Text>
           <div className='flex flex-wrap justify-center gap-x-8 gap-y-4'>
             {supporters.map((supporter) => (
               <span
                 key={supporter}
-                className='text-lg font-medium text-neutral-900'
               >
-                {supporter}
+                <Text size='body' weight='semibold' variant='default'>
+                  {supporter}
+                </Text>
               </span>
             ))}
           </div>
