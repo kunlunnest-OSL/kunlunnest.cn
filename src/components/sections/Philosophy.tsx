@@ -30,24 +30,24 @@ const philosophies = [
 export function PhilosophySection() {
   return (
     <section id='philosophy' className='py-24 sm:py-32'>
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base/7 text-neutral-500">核心理念</h2>
-          <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-neutral-900 sm:text-5xl lg:text-balance">
+      <div className='mx-auto max-w-7xl px-6 lg:px-8'>
+        <div className='mx-auto max-w-2xl lg:text-center'>
+          <h2 className='text-base/7 text-neutral-500'>核心理念</h2>
+          <p className='mt-2 text-4xl font-semibold tracking-tight text-pretty text-neutral-900 sm:text-5xl lg:text-balance'>
             我们相信的价值
           </p>
         </div>
-        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+        <div className='mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl'>
+          <dl className='grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16'>
             {philosophies.map((philosophy) => (
-              <div key={philosophy.name} className="relative pl-16">
-                <dt className="text-base/7 font-semibold text-neutral-900">
-                  <div className="absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-brand-red">
-                    <philosophy.icon aria-hidden="true" className="size-6 text-white" />
+              <div key={philosophy.name} className='relative pl-16'>
+                <dt className='text-base/7 font-semibold text-neutral-900'>
+                  <div className='absolute top-0 left-0 flex size-10 items-center justify-center rounded-lg bg-brand-red'>
+                    <philosophy.icon aria-hidden='true' className='size-6 text-white' />
                   </div>
                   {philosophy.name}
                 </dt>
-                <dd className="mt-2 text-base/7 text-neutral-600">{philosophy.description}</dd>
+                <dd className='mt-2 text-base/7 text-neutral-600'>{philosophy.description}</dd>
               </div>
             ))}
           </dl>
