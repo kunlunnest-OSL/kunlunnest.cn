@@ -1,5 +1,7 @@
 import { Bot, Sparkles, Printer } from 'lucide-react'
 
+import { Text } from '@/components/ui/text'
+
 const labs = [
   {
     icon: Bot,
@@ -33,18 +35,19 @@ export function LabsSection() {
       <div className='max-w-7xl mx-auto px-6 lg:px-8'>
         <div className='flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16'>
           <div>
-            <h2 className='text-base/7 text-neutral-500'>
+            <Text variant='accent' weight='semibold'>
               开放实验室集群
-            </h2>
-            <h2 className='mt-2 text-4xl font-semibold tracking-tight text-pretty text-neutral-900 sm:text-5xl lg:text-balance'>
-              在开放的世界
-              <br />
-              <span className='text-brand-red'>解决开放的问题</span>
-            </h2>
+            </Text>
+            <Text size='headline' weight='semibold' className='mt-2'>
+              在开放的世界<br/>解决开放的问题
+            </Text>
           </div>
-          <p className='text-base/7 text-neutral-500 max-w-md'>
-            依托不同专业方向的巢友，整合各方优质资源，建立开放实验室集群。在合力研究各自方向的同时，也交叉合作。
-          </p>
+          <Text variant='muted' weight='semibold' className='hidden md:flex'>
+            昆仑巢在内部依托不同专业方向的巢友，<br/>以在开放的世界解决开放的问题为理念，<br/>整合各方优质资源，建立开放实验室集群。<br/>在合力研究各自方向的同时，也交叉合作。
+          </Text>
+          <Text variant='muted' weight='semibold' className='flex md:hidden'>
+            昆仑巢在内部依托不同专业方向的巢友，以在开放的世界解决开放的问题为理念，整合各方优质资源，建立开放实验室集群。在合力研究各自方向的同时，也交叉合作。
+          </Text>
         </div>
 
         <div className='grid lg:grid-cols-3 gap-6'>

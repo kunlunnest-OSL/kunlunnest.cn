@@ -12,6 +12,7 @@ import { Button } from '@/components/ui/button'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuLabel, DropdownMenuPortal, DropdownMenuSeparator, DropdownMenuSub, DropdownMenuSubContent, DropdownMenuSubTrigger, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
 import { NavigationMenu, NavigationMenuItem, NavigationMenuList, NavigationMenuTrigger, NavigationMenuContent, NavigationMenuLink } from '@/components/ui/navigation-menu'
 import { useIsMobile } from '@/hooks/use-mobile'
+import { Text } from '@/components/ui/text'
 
 const Navbar = () => {
   const [ isOpen, setIsOpen ] = useState(false);
@@ -51,7 +52,7 @@ const Navbar = () => {
             <DropdownMenuTrigger asChild>
               <button
                 type='button'
-                className='-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-neutral-700 cursor-pointer outline-none'
+                className='-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-neutral-900 cursor-pointer outline-none'
               >
                 {isOpen ? (
                   <>
@@ -70,7 +71,7 @@ const Navbar = () => {
               {navConfig.map((section, index) => (
                 <React.Fragment key={section.title}>
                   <DropdownMenuGroup>
-                    <DropdownMenuLabel className='text-neutral-900 font-semibold'>
+                    <DropdownMenuLabel>
                       {section.title}
                     </DropdownMenuLabel>
                     {section.children.map((item) => (
@@ -118,8 +119,10 @@ const Navbar = () => {
             <NavigationMenuList className='flex-wrap'>
               {navConfig.map((group) => (
                 <NavigationMenuItem key={group.title}>
-                  <NavigationMenuTrigger className='text-sm font-semibold text-neutral-900 flex items-center cursor-pointer outline-none'>
-                    {group.title}
+                  <NavigationMenuTrigger className='flex items-center cursor-pointer outline-none'>
+                    <Text size='content' weight='semibold'>
+                      {group.title}
+                    </Text>
                   </NavigationMenuTrigger>
                   
                   <NavigationMenuContent className='w-auto'>
@@ -131,9 +134,9 @@ const Navbar = () => {
                               href={item.href ?? '#'} 
                               className='block select-none space-y-1 rounded-md leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground'
                             >
-                              <div className='text-sm font-medium leading-none'>
+                              <Text size='content'>
                                 {item.title}
-                              </div>
+                              </Text>
                             </Link>
                           </NavigationMenuLink>
                         </li>
@@ -145,7 +148,9 @@ const Navbar = () => {
             </NavigationMenuList>
           </NavigationMenu>
           <Button className='ml-5'>
-            预约访问
+            <Text size='content' weight='semibold' variant='dark'>
+              预约访问
+            </Text>
           </Button>
         </div>
       </nav>
