@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: '%s | 昆仑巢',
     default: '昆仑巢',
   },
-  description: '昆仑巢官方网站。打造一个创新思想汇聚之地，在开放的世界解决开放的问题。',
+  description: '“昆仑”代表中国文化中的最高山和精神象征，“巢”则象征着共筑之巢，我们希望成为一个有归属感的地方。',
 
   /* other */
   generator: 'Next.js',
@@ -40,14 +40,14 @@ export const metadata: Metadata = {
   /* opengraph */
   openGraph: {
     title: '昆仑巢',
-    description: '昆仑巢官方网站。打造一个创新思想汇聚之地，在开放的世界解决开放的问题。',
+    description: '“昆仑”代表中国文化中的最高山和精神象征，“巢”则象征着共筑之巢，我们希望成为一个有归属感的地方。',
     url: 'https://kunlunnest.cn',
     siteName: '昆仑巢',
     locale: 'zh-CN',
     type: 'website',
     images: [
       {
-        url: '/opengraph-image.jpg',
+        url: '/meta/og.jpg',
         width: 1200,
         height: 630,
         alt: '黑色背景上有红色的昆仑巢字迹和白色的昆仑巢英文名字 - “Kun Lun Nest”'
@@ -75,8 +75,8 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: '昆仑巢',
-    description: '昆仑巢官方网站。打造一个创新思想汇聚之地，在开放的世界解决开放的问题。',
-    images: ['/opengraph-image.jpg'],
+    description: '“昆仑”代表中国文化中的最高山和精神象征，“巢”则象征着共筑之巢，我们希望成为一个有归属感的地方。',
+    images: ['/meta/og.jpg'],
     creator: '@dabaz_official',
   },
 
