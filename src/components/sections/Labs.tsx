@@ -31,7 +31,7 @@ const labs = [
 
 export function LabsSection() {
   return (
-    <section id='labs' className='py-24 lg:py-32'>
+    <section id='labs' className='py-15'>
       <div className='max-w-7xl mx-auto px-6 lg:px-8'>
         <div className='flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16'>
           <div>
@@ -50,42 +50,8 @@ export function LabsSection() {
           </Text>
         </div>
 
-        <div className='grid lg:grid-cols-3 gap-6'>
-          {labs.map((lab) => (
-            <div
-              key={lab.name}
-              className='group bg-white border border-neutral-200 rounded-lg overflow-hidden'
-            >
-              <div className='p-8'>
-                <div className='flex items-start justify-between mb-6'>
-                  <div className='p-3 rounded-lg bg-neutral-100 transition-colors'>
-                    <lab.icon className='w-6 h-6 text-neutral-500 group-hover:text-brand-red transition-colors' />
-                  </div>
-                </div>
-
-                <h3 className='text-xl font-semibold text-neutral-900 mb-2'>
-                  {lab.name}
-                </h3>
-                <p className='text-sm text-brand-red mb-4'>
-                  发起人: {lab.leader}
-                </p>
-                <p className='text-neutral-500 text-sm leading-relaxed mb-6'>
-                  {lab.description}
-                </p>
-
-                <div className='flex flex-wrap gap-2'>
-                  {lab.focus.map((tag) => (
-                    <span
-                      key={tag}
-                      className='px-3 py-1 text-xs font-medium bg-neutral-100 text-neutral-500 rounded-full'
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          ))}
+        <div>
+          
         </div>
       </div>
     </section>

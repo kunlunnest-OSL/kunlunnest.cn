@@ -46,9 +46,9 @@ const supporters = [
 
 export function FoundersSection() {
   return (
-    <section id='founders' className='py-24 lg:py-32'>
+    <section id='founders' className='py-15'>
       <div className='max-w-7xl mx-auto px-6 lg:px-8'>
-        <div className='text-center max-w-3xl mx-auto mb-16'>
+        <div className='text-center max-w-3xl mx-auto'>
           <Text variant='accent' weight='semibold'>
             创始人
           </Text>
@@ -57,7 +57,7 @@ export function FoundersSection() {
           </Text>
         </div>
 
-        <div className='grid md:grid-cols-2 gap-8 mb-16'>
+        <div className='grid md:grid-cols-2 gap-8 mt-12'>
           {founders.map((founder) => (
             <div
               key={founder.name}
@@ -70,7 +70,7 @@ export function FoundersSection() {
                 height={720}
                 className='object cover rounded-2xl aspect-video'
               />
-              <Text weight='semibold' variant='accent' className='mt-8'>
+              <Text weight='semibold' variant='accent' className='mt-4'>
                 {founder.name}
               </Text>
               <Text weight='semibold'>
@@ -79,16 +79,15 @@ export function FoundersSection() {
               <Text variant='muted' weight='semibold'>
                 {founder.achievements}
               </Text>
-
             </div>
           ))}
         </div>
 
         <div className='text-center'>
-          <Text size='body' variant='accent' weight='semibold' className='mb-8'>
+          <Text size='body' variant='accent' weight='semibold' className='mt-12'>
             共同发起人
           </Text>
-          <div className='flex flex-wrap justify-center gap-x-8 gap-y-4'>
+          <div className='flex flex-wrap justify-center gap-x-8 gap-y-4 mt-4'>
             {supporters.map((supporter) => (
               <span
                 key={supporter}
