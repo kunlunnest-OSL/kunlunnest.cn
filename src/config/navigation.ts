@@ -35,13 +35,7 @@ export const navConfig = [
       },
     ],
   },
-  {
-    title: '联系',
-    children: [
-      { title: '联系巢小二', href: '/contact/assistant' },
-      { title: '链接信息查看', href: '/contact/links' },
-    ],
-  },
+  { title: '联系', href: '/contact' },
 ];
 
 export const footerNavConfig = [
@@ -74,13 +68,6 @@ export const footerNavConfig = [
       { title: '活动知识产出', href: '/network/wiki/output' },
       { title: 'AI 工具协作文档', href: '/network/wiki/ai-docs' },
       { title: 'PPT/知识文档', href: '/network/wiki/files' },
-    ],
-  },
-  {
-    title: '联系',
-    children: [
-      { title: '联系巢小二', href: '/contact/assistant' },
-      { title: '链接信息查看', href: '/contact/links' },
     ],
   },
 ];
