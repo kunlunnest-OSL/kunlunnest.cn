@@ -76,7 +76,7 @@ export function FoundersSection() {
               <Text weight='semibold'>
                 {founder.titles}
               </Text>
-              <Text variant='muted' weight='semibold'>
+              <Text variant='muted'>
                 {founder.achievements}
               </Text>
             </div>
@@ -87,12 +87,12 @@ export function FoundersSection() {
           <Text size='body' variant='accent' weight='semibold' className='mt-12'>
             共同发起人
           </Text>
-          <div className='flex flex-wrap justify-center gap-x-4 mt-2'>
+          <div className='grid grid-cols-4 md:grid-cols-5 justify-center gap-x-4 mt-2'>
             {supporters.map((supporter) => (
               <span
                 key={supporter}
               >
-                <Text size='body' weight='semibold' variant='default'>
+                <Text size='body' variant='default'>
                   {supporter}
                 </Text>
               </span>

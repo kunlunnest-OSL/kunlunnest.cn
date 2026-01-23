@@ -42,7 +42,7 @@ export function LabsSection() {
               在开放的世界<br/>解决开放的问题
             </Text>
           </div>
-          <Text variant='muted' weight='semibold' className='md:max-w-xs mt-6 md:mt-0'>
+          <Text variant='muted' className='md:max-w-xs mt-6 md:mt-0'>
             昆仑巢在内部依托不同专业方向的巢友，以在开放的世界解决开放的问题为理念，整合各方优质资源，建立开放实验室集群。在合力研究各自方向的同时，也交叉合作。
           </Text>
         </div>
