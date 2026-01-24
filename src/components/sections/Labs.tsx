@@ -1,6 +1,10 @@
 import { Bot, Sparkles, Printer } from 'lucide-react'
 
 import { Text } from '@/components/ui/text'
+import EmblaCarousel from '@/components/layout/EmblaCarousel'
+import { EmblaOptionsType } from 'embla-carousel'
+
+import slides from '@/config/slides'
 
 const labs = [
   {
@@ -30,10 +34,12 @@ const labs = [
 ];
 
 export function LabsSection() {
+  const OPTIONS: EmblaOptionsType = { loop: true }
+
   return (
     <section id='labs' className='py-15'>
-      <div className='max-w-7xl mx-auto px-6 lg:px-8 pt-8 md:pt-16'>
-        <div className='flex flex-col md:flex-row md:items-end md:justify-between'>
+      <div className='pt-8 pb-12'>
+        <div className='flex flex-col md:flex-row md:items-end md:justify-between max-w-7xl mx-auto px-6 lg:px-8'>
           <div className='text-center md:text-left'>
             <Text variant='accent' weight='semibold'>
               开放实验室集群
@@ -46,9 +52,20 @@ export function LabsSection() {
             昆仑巢在内部依托不同专业方向的巢友，以在开放的世界解决开放的问题为理念，整合各方优质资源，建立开放实验室集群。在合力研究各自方向的同时，也交叉合作。
           </Text>
         </div>
-
-        <div>
-          
+        <div className='pt-8'>
+          <div className='flex flex-col'>
+            {slides.map((slide, index) => (
+              <div key={index} className='text-center md:text-left mb-16 last:mb-0'>
+                <Text size='subhead' weight='semibold' className='max-w-7xl mx-auto px-6 lg:px-8 pb-6'>
+                  {slide.title}
+                </Text>
+                <EmblaCarousel options={OPTIONS} slides={slide.items} />
+                <Text variant='muted' className='max-w-7xl mx-auto px-6 lg:px-8 mt-6'>
+                  {slide.description}
+                </Text>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
