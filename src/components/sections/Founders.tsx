@@ -47,7 +47,7 @@ const supporters = [
 export function FoundersSection() {
   return (
     <section id='founders' className='py-15'>
-      <div className='max-w-7xl mx-auto px-6 lg:px-8 pt-8 md:pt-16 pb-12 md:pb-24'>
+      <div className='max-w-7xl mx-auto px-6 lg:px-8 pt-8 pb-12'>
         <div className='text-center max-w-3xl mx-auto'>
           <Text variant='accent' weight='semibold'>
             创始人
