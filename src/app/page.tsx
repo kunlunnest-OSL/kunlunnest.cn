@@ -1,6 +1,7 @@
 import { HeroSection } from '@/components/sections/Hero'
 import { FoundersSection } from '@/components/sections/Founders'
 import { LabsSection } from '@/components/sections/Labs'
+import { EcosystemSection } from '@/components/sections/Ecosystem'
 
 export default function HomePage() {
   return (
@@ -8,6 +9,7 @@ export default function HomePage() {
       <HeroSection />
       <FoundersSection />
       <LabsSection />
+      <EcosystemSection />
     </main>
   )
 }
