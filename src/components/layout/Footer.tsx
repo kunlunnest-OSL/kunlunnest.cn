@@ -3,7 +3,12 @@ import Link from 'next/link'
 import { footerNavConfig } from '@/config/navigation'
 import { social } from '@/config/social'
 import Image from 'next/image'
-import { Text } from '../ui/text'
+import { Text } from '@/components/ui/text'
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger
+} from '@/components/ui/popover'
 
 const Footer = () => {
   return (
@@ -24,13 +29,40 @@ const Footer = () => {
             <Text size='caption' className='text-neutral-600'>
               创新思想汇聚之地。
             </Text>
-            <div className="flex space-x-6">
-              {social.map((item) => (
-                <Link key={item.name} href={item.href} className="text-neutral-500 hover:text-neutral-600 transition-colors" target="_blank">
-                  <span className="sr-only">{item.name}</span>
-                  <item.icon className="h-5 w-5" aria-hidden="true" />
-                </Link>
-              ))}
+            <div className='flex space-x-6'>
+              {social.map((item) => {
+                if (item.imageUrl) {
+                  return (
+                    <Popover key={item.name}>
+                      <PopoverTrigger className='text-neutral-500 hover:text-neutral-600 transition-colors'>
+                        <span className='sr-only'>{item.name}</span>
+                        <item.icon className='h-5 w-5 cursor-pointer' aria-hidden='true' />
+                      </PopoverTrigger>
+                      <PopoverContent className='w-32 p-1 rounded-xl'>
+                        <div className='relative aspect-square w-full'>
+                          <Image
+                            src={item.imageUrl}
+                            alt={item.imageAlt || item.name}
+                            fill
+                            className='object-cover'
+                          />
+                        </div>
+                      </PopoverContent>
+                    </Popover>
+                  )
+                }
+                return (
+                  <Link 
+                    key={item.name} 
+                    href={item.href ?? '#'} 
+                    className='text-neutral-500 hover:text-neutral-600 transition-colors'
+                    target='_blank'
+                  >
+                    <span className='sr-only'>{item.name}</span>
+                    <item.icon className='h-5 w-5' aria-hidden='true' />
+                  </Link>
+                )
+              })}
             </div>
           </div>
           <div className='mt-10 grid grid-cols-1 md:grid-cols-4 gap-8 xl:col-span-2 xl:mt-0'>
@@ -39,7 +71,6 @@ const Footer = () => {
                 <Text size='caption' weight='semibold'>
                   {section.title}
                 </Text>
-                
                 <ul role='list' className='mt-3 space-y-3'>
                   {section.children?.map((item) => (
                     <li key={item.title}>
