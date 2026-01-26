@@ -95,7 +95,7 @@ const Footer = () => {
           </Text>
           <Link href='http://beian.miit.gov.cn' className='md:order-2 md:mt-0' target='_blank'>
             <Text size='xs' variant='muted' className='hover:underline'>
-              京ICP备2026XXXXXX号
+              京ICP备2024042943号
             </Text>
           </Link>
         </div>
