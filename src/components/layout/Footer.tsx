@@ -17,12 +17,12 @@ const Footer = () => {
         Footer
       </h2>
       <div className='mx-auto max-w-7xl px-6 pb-6 pt-8 lg:px-8'>
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="space-y-6">
+        <div className='xl:grid xl:grid-cols-3 xl:gap-8'>
+          <div className='space-y-6'>
             <Image
-              className="h-8 w-auto"
-              src="/meta/logo.svg"
-              alt="昆仑巢。"
+              className='h-8 w-auto'
+              src='/meta/logo.svg'
+              alt='昆仑巢。'
               width={800}
               height={306}
             />
