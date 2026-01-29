@@ -85,9 +85,11 @@ const MobileMenu = () => {
               {index < navConfig.length - 1 && <DropdownMenuSeparator />}
             </React.Fragment>
           ))}
-          <Button variant='default' className='w-full mt-2'>
-            预约访问
-          </Button>
+          <Link href='https://visit.kunlunnest.cn/appoint/create' target='_blank'>
+            <Button variant='default' className='w-full mt-2'>
+              预约访问
+            </Button>
+          </Link>
         </DropdownMenuContent>
       </DropdownMenu>
     </div>
@@ -143,11 +145,13 @@ const DesktopMenu = () => {
           ))}
         </NavigationMenuList>
       </NavigationMenu>
-      <Button className='ml-5'>
-        <Text size='content' weight='semibold' variant='dark'>
-          预约访问
-        </Text>
-      </Button>
+      <Link href='https://visit.kunlunnest.cn/appoint/create' target='_blank'>
+        <Button className='ml-5'>
+          <Text size='content' weight='semibold' variant='dark'>
+            预约访问
+          </Text>
+        </Button>
+      </Link>
     </div>
   )
 }
