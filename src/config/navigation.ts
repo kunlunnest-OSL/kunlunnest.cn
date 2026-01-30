@@ -4,7 +4,7 @@ export const navConfig = [
     children: [
       { title: '活动日历', href: 'https://visit.kunlunnest.cn/appoint/activities', target: '_blank' },
       { title: '活动回顾', href: 'https://qifux.com/kunlunnest/event', target: '_blank' },
-      { title: '关于我们', href: '/about', target: '_self' },
+      { title: '关于我们', href: '#', target: '_self' },
     ],
   },
   {
@@ -12,6 +12,8 @@ export const navConfig = [
     children: [
       { 
         title: '人脉池', 
+        href: 'https://qifux.com/hub/kunlunnest',
+        target: '_blank',
         children: [
           { title: '个人信息发布', href: 'https://qifux.com/hub/apply/kunlunnest', target: '_blank' },
           { title: '他人信息查看', href: 'https://qifux.com/hub/kunlunnest', target: '_blank' },
@@ -20,6 +22,8 @@ export const navConfig = [
       },
       { 
         title: '需求池', 
+        href: 'https://qifux.com/hub/kunlunnest',
+        target: '_blank',
         children: [
           { title: '需求动态展示', href: 'https://qifux.com/hub/kunlunnest', target: '_blank' },
           { title: '需求链接申请', href: 'https://qifux.com/hub/apply/kunlunnest', target: '_blank' },
@@ -27,6 +31,8 @@ export const navConfig = [
       },
       { 
         title: '知识库', 
+        href: '#',
+        target: '_self',
         children: [
           { title: '活动知识产出', href: '#', target: '_self' },
           { title: 'AI 工具协作文档', href: '#', target: '_self' },
@@ -44,7 +50,7 @@ export const footerNavConfig = [
     children: [
       { title: '活动日历', href: 'https://visit.kunlunnest.cn/appoint/activities', target: '_blank' },
       { title: '活动回顾', href: 'https://qifux.com/kunlunnest/event', target: '_blank' },
-      { title: '关于我们', href: '/about', target: '_self' },
+      { title: '关于我们', href: '#', target: '_self' },
     ],
   },
   {
