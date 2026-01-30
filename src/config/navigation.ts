@@ -2,7 +2,7 @@ export const navConfig = [
   {
     title: '昆仑故事',
     children: [
-      { title: '活动日历', href: 'https://qifux.com/kunlunnest/eventcal', target: '_blank' },
+      { title: '活动日历', href: 'https://visit.kunlunnest.cn/appoint/activities', target: '_blank' },
       { title: '活动回顾', href: 'https://qifux.com/kunlunnest/event', target: '_blank' },
       { title: '关于我们', href: '/about', target: '_self' },
     ],
@@ -42,7 +42,7 @@ export const footerNavConfig = [
   {
     title: '昆仑故事',
     children: [
-      { title: '活动日历', href: 'https://qifux.com/kunlunnest/eventcal', target: '_blank' },
+      { title: '活动日历', href: 'https://visit.kunlunnest.cn/appoint/activities', target: '_blank' },
       { title: '活动回顾', href: 'https://qifux.com/kunlunnest/event', target: '_blank' },
       { title: '关于我们', href: '/about', target: '_self' },
     ],
