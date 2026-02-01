@@ -59,8 +59,8 @@ export default function ContactPage() {
                   <Phone className='h-7 text-neutral-400' aria-hidden='true' />
                 </dt>
                 <dd>
-                  <a className='hover:text-neutral-900' href='tel:+86 12345678901'>
-                    +86 12345678901
+                  <a className='hover:text-neutral-900' href='tel:+86 15810858370'>
+                    +86 15810858370
                   </a>
                 </dd>
               </div>
@@ -70,8 +70,8 @@ export default function ContactPage() {
                   <Mail className='h-7 text-neutral-400' aria-hidden='true' />
                 </dt>
                 <dd>
-                  <a className='hover:text-neutral-900' href='mailto:hello@kunlunnest.cn'>
-                    hello@kunlunnest.cn
+                  <a className='hover:text-neutral-900' href='mailto:15810858370@163.cm'>
+                    15810858370@163.cm
                   </a>
                 </dd>
               </div>
