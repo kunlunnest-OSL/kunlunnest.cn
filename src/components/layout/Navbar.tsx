@@ -57,7 +57,7 @@ const MobileMenu = () => {
                             <DropdownMenuSubContent>
                               {item.children.map((child) => (
                                 <DropdownMenuItem key={child.title} asChild>
-                                  <Link href={child.href} className='w-full'>
+                                  <Link href={child.href} className='w-full' target={child.target}>
                                     {child.title}
                                   </Link>
                                 </DropdownMenuItem>
@@ -67,7 +67,7 @@ const MobileMenu = () => {
                         </DropdownMenuSub>
                       ) : (
                         <DropdownMenuItem asChild>
-                          <Link href={item.href} className='w-full'>
+                          <Link href={item.href} className='w-full' target={item.target}>
                             {item.title}
                           </Link>
                         </DropdownMenuItem>
@@ -121,6 +121,7 @@ const DesktopMenu = () => {
                             <Link 
                               href={item.href ?? '#'} 
                               className='block select-none space-y-1 rounded-md leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground'
+                              target={item.target}
                             >
                               <Text size='content'>
                                 {item.title}
@@ -134,7 +135,7 @@ const DesktopMenu = () => {
                 </>
               ) : (
                 <NavigationMenuLink asChild>
-                  <Link href={group.href ?? '#'}>
+                  <Link href={group.href ?? '#'} target={group.target}>
                     <Text size='content' weight='semibold'>
                       {group.title}
                     </Text>

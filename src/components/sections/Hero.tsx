@@ -8,7 +8,7 @@ export function HeroSection() {
       <div>
         <div className='w-full'>
           <Image
-            src='/images/hero/hero.avif'
+            src='/images/hero/1.avif'
             alt='昆仑巢'
             width={2160}
             height={1440}
