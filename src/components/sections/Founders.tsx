@@ -21,7 +21,7 @@ const founders = [
   },
 ];
 
-const supporters = [
+const coFounders = [
   '刘伟',
   '吴晓波',
   '蒋涛',
@@ -42,6 +42,83 @@ const supporters = [
   '上官永强',
   '联想集团',
   '聚鼎家族',
+];
+
+const supporters = [
+  '蔡学丰',
+  'Peter Fok',
+  '左世哲',
+  '马智慧',
+  '王保军',
+  '周杨',
+  '大龙',
+  '段凯庭',
+  '杭鑫鑫',
+  '杨维',
+  'aiba.com',
+  '王永旺',
+  '高节',
+  '曹睿',
+  '董必杰',
+  '美娜',
+  '高扬',
+  'May',
+  '段利军',
+  '孟德',
+  '罗荆',
+  '永青',
+  '东栋',
+  '醒客',
+  '李辰',
+  '韩三石',
+  '王卓',
+  '张法伦',
+  '邱彬彬',
+  '马懿宏',
+  '王亚南',
+  '纪中展',
+  '昊东',
+  '智筹Peter周',
+  '步拙愚',
+  '陈天明',
+  '曾昭岩',
+  '常远',
+  '梁尧',
+  '杨晓东',
+  '徐祥生',
+  '张娜',
+  '数智科技文化',
+  '李强',
+  '王文波',
+  '王剑飞',
+  '李慧英',
+  '董永芳',
+  '刘松海',
+  '刘星',
+  '韩喜阳',
+  '田雅娟',
+  '白杨',
+  '王萌',
+  '南岳',
+  '彭秀珍',
+  '刘善泉',
+  '陈宁',
+  '大成歌',
+  '张弘',
+  '谢国锋',
+  '徐华欧',
+  '许淼',
+  '耿晓笛',
+  '李春雷',
+  '闫峰',
+  '刘健',
+  '王海利',
+  '逍遥津',
+  '张敏',
+  '刘维一',
+  '王桐',
+  '张海涛',
+  '曾著',
 ];
 
 export function FoundersSection() {
@@ -88,11 +165,28 @@ export function FoundersSection() {
             共同发起人
           </Text>
           <div className='grid grid-cols-4 md:grid-cols-5 justify-center gap-x-4 mt-2'>
+            {coFounders.map((coFounder) => (
+              <span
+                key={coFounder}
+              >
+                <Text size='body' variant='default'>
+                  {coFounder}
+                </Text>
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <div className='text-center'>
+          <Text size='body' variant='accent' weight='semibold' className='mt-12'>
+            共建人
+          </Text>
+          <div className='grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 justify-center gap-x-4 mt-2'>
             {supporters.map((supporter) => (
               <span
                 key={supporter}
               >
-                <Text size='body' variant='default'>
+                <Text size='content' variant='default'>
                   {supporter}
                 </Text>
               </span>
