@@ -164,7 +164,7 @@ export function FoundersSection() {
           <Text size='body' variant='accent' weight='semibold' className='mt-12'>
             共同发起人
           </Text>
-          <div className='grid grid-cols-4 md:grid-cols-5 justify-center gap-x-4 mt-2'>
+          <div className='grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 justify-center gap-x-4 mt-2'>
             {coFounders.map((coFounder) => (
               <span
                 key={coFounder}
@@ -181,12 +181,12 @@ export function FoundersSection() {
           <Text size='body' variant='accent' weight='semibold' className='mt-12'>
             共建人
           </Text>
-          <div className='grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 justify-center gap-x-4 mt-2'>
+          <div className='grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 justify-center gap-x-4 mt-2'>
             {supporters.map((supporter) => (
               <span
                 key={supporter}
               >
-                <Text size='content' variant='default'>
+                <Text size='body' variant='default'>
                   {supporter}
                 </Text>
               </span>
