@@ -1,0 +1,86 @@
+昆仑巢网站部��指南 - 方案B（直接替换）
+==========================================
+
+第一步：备份原网站
+-----------------
+1. 登录服务器（SSH/宝塔/FTP）
+2. 找到网站根目录
+3. 将整个文件夹改名或打包：
+   - 改名：例如 "kunlunnest" → "kunlunnest_backup_20260419"
+   - 或打包：tar -czf backup.tar.gz *
+
+第二步：上传新网站
+-----------------
+上传位置：dist文件夹内的所有内容
+目标��径：你的网站根目录
+
+需要上传的文件：
+kunlunnest-website/dist/
+├── index.html          # 首页（必需）
+├── assets/             # JS、CSS文件（必需）
+│   ├── index-xxx.css
+│   └── index-xxx.js
+└── data/               # 新闻数据（必需）
+    └── news.json
+
+第三���：访问测试
+-----------------
+1. 打开浏览器访问你的域名
+2. 检查：
+   - 首页能否���常显示
+   - 导航栏链接是否工作
+   - 新闻页面能否加载
+   - 图片是否显示
+   - 移动端是否正常
+
+注意事项：
+---------
+1. 图片路径：确保 /images/ 文件夹存在
+2. 如果图片显示不出来，需要上传图片文件夹
+3. 如果页面刷新出现404，需要配置Web���务器（见下方）
+
+Web服务器配置（如果刷新404）
+---------------------------
+
+Nginx配置：
+location / {
+    try_files $uri $uri/ /index.html;
+}
+
+Apache配置（.htaccess）：
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
+
+IIS��置（web.config）：
+<?xml version="1.0"?>
+<configuration>
+  <system.webServer>
+    <rewrite>
+      <rules>
+        <rule name="React Routes" stopProcessing="true">
+          <match url=".*" />
+          <conditions logicalGrouping="MatchAll">
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <action type="Rewrite" url="/" />
+        </rule>
+      </rules>
+    </rewrite>
+  </system.webServer>
+</configuration>
+
+更新新闻流程（部署后）
+--------------------
+1. 本地编辑 news-data.csv
+2. 运行 更新新闻.bat
+3. 运行 npm run build
+4. 只上传 dist/data/news.json 到服务器的 data/ 文件夹
+
+完成！
