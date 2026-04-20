@@ -1,0 +1,98 @@
+{
+  "nav": {
+    "home": "HOME",
+    "story": "STORY",
+    "labs": "LABS",
+    "news": "NEWS",
+    "join": "JOIN"
+  },
+  "hero": {
+    "title": "昆仑巢",
+    "subtitle": "KUNLUN NEST",
+    "slogan": "创新思想汇聚之地",
+    "slogan2": "共创 · 共建 · 共享",
+    "scroll": "SCROLL DOWN"
+  },
+  "values": {
+    "title": "CORE VALUES",
+    "subtitle": "昆仑巢核心理念",
+    "cocreate": {
+      "title": "共创共建共享",
+      "subtitle": "CO-CREATE",
+      "desc": "这是昆仑巢明确的核心理念，所有的参与者既是生态的享用者，也是建设者。"
+    },
+    "communication": {
+      "title": "平等开放交流",
+      "subtitle": "OPEN COMMUNICATION",
+      "desc": "昆仑巢极力营造一种无门槛的平等、开放、自由的交流空间，参与者自由讨论，也会由巢友相互建立联系。"
+    },
+    "value": {
+      "title": "价值回归务实",
+      "subtitle": "VALUE RETURN",
+      "desc": "从追逐融资与估值，回归到具体问题。昆仑巢的创业者们很少讨论融资，更加关注具体的项目合作、解决实际痛点、高效业务落地。"
+    },
+    "capability": {
+      "title": "能力重组冗余",
+      "subtitle": "CAPABILITY RECOMBINATION",
+      "desc": "不做简单的资源对接，专注\"能力的基因重组\"。通过重组成功要素，降低失败代价，在这里失败不意味着归零。"
+    }
+  },
+  "labs": {
+    "title": "OPEN LABS",
+    "subtitle": "创新思想汇聚之地",
+    "robot": {
+      "title": "人形机器人实验室",
+      "subtitle": "HUMANOID ROBOT LAB",
+      "lead": "郭成凯 博士",
+      "desc": "由北京通用人工智能研究院技术负责人郭成凯博士等巢友发起，主要从事具身机器人、机械手臂研究、AI大模型应用等方向的研究分享。"
+    },
+    "3dprint": {
+      "title": "3D打印实验室",
+      "subtitle": "3D PRINTING LAB",
+      "lead": "许方雷",
+      "desc": "由北京市创新专项领军人才许方雷发起，专注工业设计、增材制造、商业模型，为巢内初代设备提供产品设计制作。"
+    },
+    "aigc": {
+      "title": "AIGC开放实验室",
+      "subtitle": "AIGC LAB",
+      "desc": "由早期优酷网创业团队研发负责人等发起，主要从事AI入企服务、AI内容生成制作、智能体搭建等方向的研究分享。"
+    },
+    "learnMore": "了解详情 →",
+    "exploreAll": "探索开放实验室"
+  },
+  "founders": {
+    "title": "VISIONARIES",
+    "subtitle": "创始人",
+    "sudi": {
+      "name": "苏菂",
+      "title": "FOUNDER",
+      "role": "昆仑巢创始人",
+      "desc": "中国创业服务领域的标志性人物。2011年创办车库咖啡，2015年联合创立YOU+国际青年社区，2018年发起中关村创业博物馆，2023年与鲍岳桥共同创立昆仑巢。"
+    },
+    "baoyueqiao": {
+      "name": "鲍岳桥",
+      "title": "FOUNDER",
+      "role": "昆仑巢创始人",
+      "desc": "中国IT行业的标志性人物。UCDOS开发者（1995年市场份额达90%），联众游戏创始人（2000年成为中国最大休闲游戏网站），乐教乐学创始人（覆盖7000万用户）。"
+    },
+    "viewStory": "了解昆仑巢故事"
+  },
+  "cta": {
+    "title": "JOIN THE\nAI REVOLUTION",
+    "subtitle": "成为改变世界的一员",
+    "desc": "昆仑巢汇聚大模型、具身智能、人形机器人、硬科技创业者，各行各业创新者，共同探索具身智能的未来",
+    "button": "立即加入昆仑巢",
+    "stats": {
+      "members": "60+ 共建人在线",
+      "labs": "3 个开放实验室",
+      "communities": "16+各类社群"
+    }
+  },
+  "footer": {
+    "company": "北京智能之路科技有限公司",
+    "copyright": "© 2026 昆仑巢 KUNLUN NEST · 京ICP备2024042943号"
+  },
+  "common": {
+    "leader": "负责人："
+  }
+}

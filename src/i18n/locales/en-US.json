@@ -1,0 +1,98 @@
+{
+  "nav": {
+    "home": "HOME",
+    "story": "STORY",
+    "labs": "LABS",
+    "news": "NEWS",
+    "join": "JOIN"
+  },
+  "hero": {
+    "title": "KUNLUN NEST",
+    "subtitle": "KUNLUN NEST",
+    "slogan": "Where Innovation Converges",
+    "slogan2": "Co-Create · Co-Build · Co-Share",
+    "scroll": "SCROLL DOWN"
+  },
+  "values": {
+    "title": "CORE VALUES",
+    "subtitle": "Our Guiding Principles",
+    "cocreate": {
+      "title": "Co-Create & Share",
+      "subtitle": "CO-CREATE",
+      "desc": "This is Kunlun Nest's core philosophy: every participant is both a beneficiary and a builder of our ecosystem."
+    },
+    "communication": {
+      "title": "Open Communication",
+      "subtitle": "OPEN COMMUNICATION",
+      "desc": "We foster a barrier-free space for equal, open, and free exchange. Members discuss freely and build connections organically."
+    },
+    "value": {
+      "title": "Value-Driven Focus",
+      "subtitle": "VALUE RETURN",
+      "desc": "Shifting from chasing funding and valuations to solving real problems. Our entrepreneurs focus on concrete collaborations, addressing pain points, and efficient execution."
+    },
+    "capability": {
+      "title": "Capability Recombination",
+      "subtitle": "CAPABILITY RECOMBINATION",
+      "desc": "Beyond simple resource matching, we focus on 'genetic recombination of capabilities.' By reassembling success factors, we reduce the cost of failure—here, failure doesn't mean starting from zero."
+    }
+  },
+  "labs": {
+    "title": "OPEN LABS",
+    "subtitle": "Innovation Hub",
+    "robot": {
+      "title": "Humanoid Robotics Lab",
+      "subtitle": "HUMANOID ROBOT LAB",
+      "lead": "Dr. Guo Chengkai",
+      "desc": "Led by Dr. Guo Chengkai, Head of Technology at Beijing Institute for General Artificial Intelligence. Focuses on embodied robotics, robotic arms, and AI model applications."
+    },
+    "3dprint": {
+      "title": "3D Printing Lab",
+      "subtitle": "3D PRINTING LAB",
+      "lead": "Xu Fanglei",
+      "desc": "Founded by Xu Fanglei, Beijing Innovation Talent Leader. Specializes in industrial design, additive manufacturing, and commercial prototyping for early-stage hardware."
+    },
+    "aigc": {
+      "title": "AIGC Open Lab",
+      "subtitle": "AIGC LAB",
+      "desc": "Initiated by early Youku founding team R&D leaders. Focuses on AI enterprise solutions, AI content generation, and intelligent agent development."
+    },
+    "learnMore": "Learn More →",
+    "exploreAll": "Explore All Labs"
+  },
+  "founders": {
+    "title": "VISIONARIES",
+    "subtitle": "Founders",
+    "sudi": {
+      "name": "Su Di",
+      "title": "FOUNDER",
+      "role": "Founder of Kunlun Nest",
+      "desc": "A pioneering figure in China's entrepreneurship ecosystem. Founded Garage Cafe (2011), co-founded YOU+ International Youth Community (2015), launched Zhongguancun Entrepreneurship Museum (2018), and co-founded Kunlun Nest with Bao Yueqiao (2023)."
+    },
+    "baoyueqiao": {
+      "name": "Bao Yueqiao",
+      "title": "FOUNDER",
+      "role": "Founder of Kunlun Nest",
+      "desc": "A legendary figure in China's IT industry. Creator of UCDOS (90% market share in 1995), founder of Ourgame.com (China's largest casual gaming platform in 2000), and founder of Leleketang (serving 70 million users)."
+    },
+    "viewStory": "Our Story"
+  },
+  "cta": {
+    "title": "JOIN THE\nAI REVOLUTION",
+    "subtitle": "Be Part of Changing the World",
+    "desc": "Kunlun Nest brings together innovators in large language models, embodied intelligence, humanoid robotics, and deep tech to explore the future of AI together.",
+    "button": "Join Kunlun Nest",
+    "stats": {
+      "members": "60+ Active Members",
+      "labs": "3 Open Labs",
+      "communities": "16+ Communities"
+    }
+  },
+  "footer": {
+    "company": "Beijing Intelligent Road Technology Co., Ltd.",
+    "copyright": "© 2026 Kunlun Nest · ICP 2024042943"
+  },
+  "common": {
+    "leader": "Led by: "
+  }
+}

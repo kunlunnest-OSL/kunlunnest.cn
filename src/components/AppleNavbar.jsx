@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 /**
  * 苹果风格导航栏 - 全站通用
@@ -7,13 +8,14 @@ import { Link, useLocation } from 'react-router-dom';
  */
 const AppleNavbar = () => {
   const location = useLocation();
+  const { t } = useTranslation();
 
   const navItems = [
-    { name: '首页', path: '/', label: 'HOME' },
-    { name: '故事', path: '/story', label: 'STORY' },
-    { name: '实验室', path: '/labs', label: 'LABS' },
-    { name: '动态', path: '/news', label: 'NEWS' },
-    { name: '加入', path: '/contact', label: 'JOIN' },
+    { path: '/', label: t('nav.home') },
+    { path: '/story', label: t('nav.story') },
+    { path: '/labs', label: t('nav.labs') },
+    { path: '/news', label: t('nav.news') },
+    { path: '/contact', label: t('nav.join') },
   ];
 
   const isActive = (path) => location.pathname === path;

@@ -25,6 +25,16 @@
   * {
     box-sizing: border-box;
   }
+
+  /* 性能优化 - 使用GPU加速 */
+  .will-change-transform {
+    will-change: transform;
+  }
+
+  /* 减少重绘 */
+  img, video {
+    content-visibility: auto;
+  }
 }
 
 @layer utilities {
