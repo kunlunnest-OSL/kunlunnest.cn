@@ -16,9 +16,17 @@ export default defineConfig({
     // 代码分割优化
     rollupOptions: {
       output: {
-        manualChunks: {
-          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
-          'animation-vendor': ['framer-motion', 'gsap', '@studio-freight/lenis'],
+        manualChunks: (id) => {
+          // React 相关库
+          if (id.includes('node_modules')) {
+            if (id.includes('react') || id.includes('react-dom') || id.includes('react-router-dom')) {
+              return 'react-vendor';
+            }
+            // 动画库
+            if (id.includes('framer-motion') || id.includes('gsap') || id.includes('@studio-freight/lenis')) {
+              return 'animation-vendor';
+            }
+          }
         },
       },
     },
